@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    /* CSS styles */
+    body, html {
+      height: 100%; /* Ensure the full height for vertical centering */
+      margin: 0; /* Reset default margin */
+      display: flex;
+      align-items: center; /* Center content vertically in the viewport */
+      justify-content: center; /* Center content horizontally */
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #FFC0CB; /* Light pink heading */
+      text-align: center; /* Center the heading text */
+      margin-bottom: 20px; /* Space between the heading and the form */
+    }
+    form {
+      background-color: #222; /* Darker shade of black for form background */
+      padding: 40px; /* More padding for better spacing */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+      width: 90%; /* Use 90% of the container width */
+      max-width: 600px; /* Increased max width */
+      min-height: 400px; /* Minimum height to make form taller */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; /* Distribute space around items */
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px; /* Slightly larger padding for better readability */
+      margin-bottom: 20px; /* Increased margin for better separation */
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+    button[type="submit"] {
+      background-color: #FF1493; /* Deep pink */
+      color: #fff;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%; /* Full width */
+    }
+    button[type="submit"]:hover {
+      background-color: #FF69B4; /* Lighter pink on hover */
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Signup</h1>
+    <form action="/signup" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
